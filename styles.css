@@ -1,0 +1,217 @@
+:root {
+    --pink: #DD01FF;
+    --white: #fff;
+    --text-color: #3C3759;
+    --bg-color: #f4b9fd1a;
+    --purple: #7a1dec;
+    --title-color: #10006D;
+    --font-montserrat:'Montserrat', sans-serif;
+}
+body{
+    background-color: #ffe5f9;
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+}
+.mx{
+  margin: 0 7rem;  
+}
+.navbar,
+.collapsible-nav ,
+.hero-section,
+.box,.why-choose-us,
+.contact-us,
+.social-icons,.tutors
+,.all-courses>div,.reviews-cards,.card-review>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1010;
+    background-color: rgb(255, 250, 244);
+    padding:  0.5rem 2rem;
+    font-size: 18px;
+    width: 100%;
+}
+.logo >a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.logo>a:hover{
+    color: var(--pink);
+}
+.collapsible-nav{
+    width: 600px;
+    justify-content: space-between;
+    margin-right: 5rem;
+}
+.collapsible-nav > ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+}
+.collapsible-nav >ul>li>{
+    display: inline-flex;
+
+}
+.hero-section >div>h1{
+    font-size: 55px;
+    line-height: 72px;
+    margin-bottom: 2rem;
+}
+.hero-section>div>h1>span,
+.contact-header>span,
+.experts>h2>span,
+.experts>p,
+.all-courses>h2>span
+,.reviews>h2>span{
+    color: var(--pink);
+}
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background-color: var(--purple);
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 1.2rem 4rem;
+    border: 1px solid var(--purple);
+    font-weight: 500;
+}
+.btn-message:hover{
+    border:1px solid var(--purple);
+    background-color: var(--white);
+    color: #332c2c;
+}
+.box-container{
+    display: flex;
+}
+.box{
+    justify-content: space-around;
+    width: 260px;
+    height: 90px;
+    margin: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 5px;
+}
+.box>.icon,.card-review>div>div>p>i{
+    font-size: 4rem;
+    color: var(--pink);
+}
+.box>div,
+.contact-header,
+.experts>h2,
+.all-courses>h2,
+.course-card>h4,
+.reviews>h2{
+    font-weight: 600;
+    font-size: 30px;
+    color: #17142b;
+}
+
+.box>div>p,.form-element,.course-card>h4,.card-review>div>div>p{
+    font-size: 18px;
+}
+.why-choose-us{
+    font-size: 18px;
+    margin: 3rem inherit;
+    text-align: center;
+}
+.why-choose-us>div>h2,
+.contact-header,
+.experts>h2,
+.experts>p,.all-courses>h2,.reviews>h2{
+     font-size: 3rem;  
+     font-weight: 600;
+}
+.course-card{
+    background-color: var(--white);
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+}
+.course-card>img{
+    height: 200px;
+    width: 280px;
+}
+.course-card>p{
+    width: 250px;
+    margin: auto;
+}
+.tutors>img{
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+}
+.card-review{
+    background-color: var(--white);
+    width: 320px;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.card-review>div{
+    justify-content: space-around;
+}
+.card-review>div>img{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+}
+.contact-header,
+.experts>p,
+.experts>h2,
+.all-courses>h2,
+.reviews>h2{
+    width: 100%;
+    text-align: center;
+}
+.form-element{
+    width:470px;
+}
+.form-element>input,.form-element>select{
+    width: -webkit-fill-available;
+    font-size: 20px;
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    color: #332c2c;
+    border: 1px solid rgb(155, 145, 145);
+    outline: none;
+}
+.form-element>select>option{
+    width: 100%;
+    padding: 10px;
+}
+.footer{
+    margin: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 3rem 0;
+    background-color: var(--purple);
+}
+.footer>hr{
+   border: 1px solid var(--white);
+}
+.social-icons,.footer>div{
+  justify-content: center;
+  font-size: 28px;
+  color: var(--white);
+}
+.social-icons>i{
+    margin: 0.5rem;
+}
+.footer>div,#icn{
+    font-size: 18px;
+}
